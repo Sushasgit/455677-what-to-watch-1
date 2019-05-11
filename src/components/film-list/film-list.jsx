@@ -1,25 +1,38 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import FilmCard from '../film-card/film-card.jsx';
 
-const FilmList = (props) => {
-  return <div className="catalog__movies-list">
-    {
-      props.data.map((film) => {
-        return (
-          <article key={film.id} className="small-movie-card catalog__movies-card">
-            <button className="small-movie-card__play-btn" type="button">Play</button>
-            <div className="small-movie-card__image">
-              <img src={film.posterUrl} alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175" />
-            </div>
-            <h3 className="small-movie-card__title">
-              <a className="small-movie-card__link" href="movie-page.html">{film.name}</a>
-            </h3>
-          </article>
-        );
-      })
-    }
-  </div>;
-};
+class FilmList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      activeCard: {}
+    };
+
+    this._handleActiveCard = this._handleActiveCard.bind(this);
+  }
+
+  _handleActiveCard(activeCard) {
+    this.setState({
+      activeCard
+    });
+  }
+
+  render() {
+    return (
+      <div className="catalog__movies-list">
+        {
+          this.props.data.map((film) => {
+            return (
+              <FilmCard onClick={this._handleActiveCard} key={film.id} film={film} />
+            );
+          })
+        }
+      </div>
+    );
+  }
+}
 
 FilmList.propTypes = {
   data: PropTypes.array.isRequired,
