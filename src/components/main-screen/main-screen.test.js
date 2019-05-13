@@ -5,6 +5,7 @@ import MainScreen from './main-screen.jsx';
 it(`MainScreen run correctly`, () => {
   const tree = renderer
     .create(<MainScreen
+      films={[]}
       onClick={jest.fn()}
     />)
     .toJSON();

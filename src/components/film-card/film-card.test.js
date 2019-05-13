@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from "./app.jsx";
+import FilmCard from './film-card.jsx';
 
-it(`App run correctly`, () => {
+it(`FilmCard run correctly`, () => {
   const tree = renderer
-    .create(<App
-      films={[]}
+    .create(<FilmCard
+      film={{}}
       onClick={jest.fn()}
     />)
     .toJSON();

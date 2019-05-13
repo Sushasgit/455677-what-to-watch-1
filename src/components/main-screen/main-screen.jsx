@@ -1,8 +1,9 @@
 import React from 'react';
-import {films} from '../../utils/constants.js';
+import PropTypes from 'prop-types';
+
 import FilmList from '../film-list/film-list.jsx';
 
-const MainScreen = () => {
+const MainScreen = ({films}) => {
   return (
     <React.Fragment>
       <section className="movie-card">
@@ -119,6 +120,10 @@ const MainScreen = () => {
         </footer>
       </div>
     </React.Fragment>);
+};
+
+MainScreen.propTypes = {
+  films: PropTypes.array.isRequired,
 };
 
 export default MainScreen;
