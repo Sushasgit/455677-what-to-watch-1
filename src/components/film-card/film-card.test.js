@@ -7,6 +7,9 @@ it(`FilmCard run correctly`, () => {
     .create(<FilmCard
       film={{}}
       onClick={jest.fn()}
+      isPlaying={true}
+      handleActiveCard={jest.fn()}
+      clearActiveCard={jest.fn()}
     />)
     .toJSON();
 

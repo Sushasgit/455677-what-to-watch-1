@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoPlayer run correctly 1`] = `
+<video
+  className="small-movie-card__video"
+  muted={true}
+  poster=""
+/>
+`;

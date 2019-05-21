@@ -19,6 +19,7 @@ html {
  */
 body {
   margin: 0;
+  color: red;
 }
 
 /**
@@ -1327,7 +1328,7 @@ main {
 .small-movie-card__play-btn {
   display: block;
   padding: 0;
-  background: url(../img/icons/play-s.svg) no-repeat calc(50% + 3px) center;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDBMMTkgOS41TDAgMTlWMFoiIGZpbGw9IiNFRUU1QjUiLz4KPC9zdmc+Cg==) no-repeat calc(50% + 3px) center;
   background-size: 32px 32px;
   width: 56px;
   height: 56px;
@@ -1414,3 +1415,6 @@ main {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
+
+
+/*# sourceMappingURL=main.css.map*/
