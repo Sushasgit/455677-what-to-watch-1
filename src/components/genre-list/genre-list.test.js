@@ -1,13 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import MainScreen from './main-screen.jsx';
+import GenreList from './genre-list.jsx';
 
-it(`MainScreen run correctly`, () => {
+it(`GenreList run correctly`, () => {
   const tree = renderer
-    .create(<MainScreen
-      films={[]}
-      onGenreChange={jest.fn()}
+    .create(<GenreList
       genres={[]}
+      onGenreChange={jest.fn()}
       activeGenre={``}
     />)
     .toJSON();
