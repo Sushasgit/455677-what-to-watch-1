@@ -8,6 +8,7 @@ it(`App correctly renders`, () => {
     filmList={[]}
     activeGenre={``}
     onGenreChange={jest.fn()}
+    genres={[]}
   />)
   .toJSON();
 

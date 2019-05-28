@@ -93,7 +93,7 @@ const MainScreen = ({films, onGenreChange, genres, activeGenre}) => {
 MainScreen.propTypes = {
   films: PropTypes.array.isRequired,
   onGenreChange: PropTypes.func,
-  genres: PropTypes.array.isRequired,
+  genres: PropTypes.array,
   activeGenre: PropTypes.string
 };
 

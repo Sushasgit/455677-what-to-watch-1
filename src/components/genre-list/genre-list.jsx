@@ -5,7 +5,7 @@ const GenreList = ({genres, onGenreChange, activeGenre}) => {
   return (
     <ul className="catalog__genres-list">
       {
-        genres.map((genre, i) => {
+        genres && genres.map((genre, i) => {
           return (
             <li
               key={i}
@@ -23,7 +23,7 @@ const GenreList = ({genres, onGenreChange, activeGenre}) => {
 };
 
 GenreList.propTypes = {
-  genres: PropTypes.array.isRequired,
+  genres: PropTypes.array,
   onGenreChange: PropTypes.func,
   activeGenre: PropTypes.string
 };

@@ -37,6 +37,7 @@ export default [
   {
     id: 6,
     name: `Seven Years in Tibet`,
+    genre: `Fantasy`,
     posterUrl: `img/fantastic-beasts-the-crimes-of-grindelwald.jpg`,
     source: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`
   },

@@ -152,72 +152,7 @@ Array [
       </h2>
       <ul
         className="catalog__genres-list"
-      >
-        <li
-          className="catalog__genres-item "
-          onClick={[Function]}
-        >
-          <a
-            className="catalog__genres-link"
-            href="#"
-          >
-            All genres
-          </a>
-        </li>
-        <li
-          className="catalog__genres-item "
-          onClick={[Function]}
-        >
-          <a
-            className="catalog__genres-link"
-            href="#"
-          >
-            Fantasy
-          </a>
-        </li>
-        <li
-          className="catalog__genres-item "
-          onClick={[Function]}
-        >
-          <a
-            className="catalog__genres-link"
-            href="#"
-          >
-            Dramas
-          </a>
-        </li>
-        <li
-          className="catalog__genres-item "
-          onClick={[Function]}
-        >
-          <a
-            className="catalog__genres-link"
-            href="#"
-          >
-            History
-          </a>
-        </li>
-        <li
-          className="catalog__genres-item "
-          onClick={[Function]}
-        >
-          <a
-            className="catalog__genres-link"
-            href="#"
-          >
-            Trillers
-          </a>
-        </li>
-        <li
-          className="catalog__genres-item "
-          onClick={[Function]}
-        >
-          <a
-            className="catalog__genres-link"
-            href="#"
-          />
-        </li>
-      </ul>
+      />
       <div
         className="catalog__movies-list"
       />
