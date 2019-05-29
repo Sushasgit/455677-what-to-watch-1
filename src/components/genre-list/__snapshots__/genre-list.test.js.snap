@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenreList run correctly 1`] = `
+<ul
+  className="catalog__genres-list"
+/>
+`;

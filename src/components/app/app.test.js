@@ -1,14 +1,16 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from "./app.jsx";
+import {App} from './app.jsx';
 
-it(`App run correctly`, () => {
+it(`App correctly renders`, () => {
   const tree = renderer
-    .create(<App
-      films={[]}
-      onClick={jest.fn()}
-    />)
-    .toJSON();
+  .create(<App
+    filmList={[]}
+    activeGenre={``}
+    onGenreChange={jest.fn()}
+    genres={[]}
+  />)
+  .toJSON();
 
   expect(tree).toMatchSnapshot();
 });
