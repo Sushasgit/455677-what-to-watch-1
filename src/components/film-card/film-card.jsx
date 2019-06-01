@@ -14,8 +14,8 @@ const FilmCard = ({film, isPlaying, handleActiveCard, clearActiveCard}) => {
       <VideoPlayer
         muted
         isPlaying={isPlaying}
-        posterUrl={film.posterUrl}
-        src={film.source}
+        posterUrl={film.poster_image}
+        src={film.preview_video_link}
       />
       <h3 className="small-movie-card__title">
         <a className="small-movie-card__link" href="movie-page.html">{film.name}</a>

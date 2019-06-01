@@ -5,7 +5,7 @@ import {App} from './app.jsx';
 it(`App correctly renders`, () => {
   const tree = renderer
   .create(<App
-    filmList={[]}
+    films={[]}
     activeGenre={``}
     onGenreChange={jest.fn()}
     genres={[]}
