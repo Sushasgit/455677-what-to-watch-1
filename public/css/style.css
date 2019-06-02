@@ -1343,6 +1343,11 @@ main {
   font-size: 0;
   cursor: pointer; }
 
+.small-movie-card__video {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .small-movie-card__link {
   display: inline-block;
   vertical-align: top;
