@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import FilmCard from '../film-card/film-card.jsx';
 import withActiveCard from '../../hocs/with-active-card/with-active-card.jsx';
 
-const FilmList = ({data, handleActiveCard, clearActiveCard, activeCard}) => {
+const FilmList = ({data = [], handleActiveCard, clearActiveCard, activeCard}) => {
   return (
     <div className="catalog__movies-list">
       {

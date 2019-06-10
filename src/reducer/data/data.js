@@ -40,7 +40,6 @@ const Operation = {
 };
 
 const reducer = (state = initialState, action) => {
-  console.log(action.payload)
   switch (action.type) {
     case ActionType.CHANGE_ACTIVE_GENRE:
       return Object.assign({}, state, {

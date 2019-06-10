@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 import FilmList from '../film-list/film-list.jsx';
 import GenreList from '../genre-list/genre-list.jsx';
 
-const MainScreen = ({films, onGenreChange, genres, activeGenre}) => {
+const MainScreen = ({films, onGenreChange, genres, activeGenre, isAutorised, user}) => {
   return (
     <React.Fragment>
       <section className="movie-card">
@@ -24,9 +25,17 @@ const MainScreen = ({films, onGenreChange, genres, activeGenre}) => {
           </div>
 
           <div className="user-block">
-            <div className="user-block__avatar">
-              <img src="img/avatar.jpg" alt="User avatar" width="63" height="63" />
-            </div>
+            {
+              isAutorised && user ? (
+                <div className="user-block__avatar">
+                  <img src={user.avatarUrl} alt="User avatar" width="63" height="63" />
+                </div>
+              ) : (
+                <Link to="/login">
+                  Sign in
+                </Link>
+              )
+            }
           </div>
         </header>
 
@@ -94,7 +103,9 @@ MainScreen.propTypes = {
   films: PropTypes.array.isRequired,
   onGenreChange: PropTypes.func,
   genres: PropTypes.array,
-  activeGenre: PropTypes.string
+  activeGenre: PropTypes.string,
+  isAutorised: PropTypes.bool,
+  user: PropTypes.object
 };
 
 export default MainScreen;
